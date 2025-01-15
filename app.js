@@ -42,5 +42,17 @@
 // reactRoot.render(nestedElements)
 
 
+//**EPISODE 2*/
+//------------------------------------------------------------------------------------
+
+/**if this import need to work we need to make the script type='module' */
+import React from 'react';
+import ReactDOM from 'react-dom/client'
+
+const reactHeader = React.createElement('h1',{id : 'heading', class : 'heading'}, 'Hellow React'); 
+const reactRoot = ReactDOM.createRoot(document.getElementById('root'));
+reactRoot.render(reactHeader)
+
+
 
 
