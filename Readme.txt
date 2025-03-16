@@ -22,7 +22,7 @@ that require authentication.
 
 
 
-Episode 1: JAN 15TH
+Episode 2: JAN 15TH
 ----------------------------------------------------------------------------------------------------------
 
 NPM
@@ -77,8 +77,46 @@ Browserslist
 A configuration tool to specify which browsers to support, helping optimize the build for the targeted environments.
 
 
+Episode 3: Mar 15TH
+----------------------------------------------------------------------------------------------------------
 
 
+setup project script 
+---------------------------------------------------------------------------------------------------------
+npm run start === npm start
+
+ "scripts": {
+  "start": "parcel index.html",
+   "build": "parcel build index.html",
+   "test": "jest"
+},
+
+npm vs npx
+----------------------------------------------------------------------------------------------------------
+✔ Use npx if you don’t want global installations.
+✔ Use npm run if you define it as a script.
+
+JSX
+-----------------------------------------------------------------------------------------------------------
+ //*JSX IS NOT HTML, IT IS A SYNTAX EXTENSION FOR JAVASCRIPT
+ //*JSX can't directly read by JS engine.
+ //*jSX Code trasnsplied into JS by Babel   
+ //*jSX Converted to React.createElement() by Babel then => React.createElement() converted to React Object then => React Object converted to actual HTML element by ReactDOM.render()
+ 
+ //*how diffrent attribute are nammed in JSX" 
+    //*class => className
+    //*for => htmlFor
+    //*tabindex => tabIndex
+    //*onclick => onClick
+    //*onchange => onChange
+    //*it uses camelCase for attribute naming convention
 
 
+    //React Components 
+    //--------------------------------------------------------------------------------------------------------------------------
+    Class Based Components : old
+    Function Based Components : new
 
+    functinal Components : a JS function that return a React element (JSX)
+
+    Component compostion : a component inside another component called 
